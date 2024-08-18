@@ -1,8 +1,32 @@
-# React + Vite
+# el memotest de prueba
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+  console.log(shuffle([1,2,3,4,5]))
+*este es un memotest que es de prueba y estoy siguiendo la clase* 
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## lenguajes utilizados son:
+
+- HTML
+- CSS
+- JavaScript
+- React
+- Tailwind
+
+|Modo Facil| Modo Dificil|
+|---       | ---         |
+| 4x4      | 6x6         |
+| 4 pares  | 25 pares    |
+
+
+### Codigo Shuffle
+```javascript
+export function shuffle(arr) {
+  let arr2 = [];
+  while (arr.length > 0) {
+    const posicionRandom = Math.round(Math.random() * arr.length);
+    const elemento = arr.splice(posicionRandom, 1);
+    arr2 = arr2.concat(elemento);
+  }
+  return arr2;
+}
+```
