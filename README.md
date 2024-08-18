@@ -1,6 +1,6 @@
 # el memotest de prueba
 
-  console.log(shuffle([1,2,3,4,5]))
+
 *este es un memotest que es de prueba y estoy siguiendo la clase* 
 
 
