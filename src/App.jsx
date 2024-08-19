@@ -1,14 +1,22 @@
-import { Card } from "./Card/Card"
 import { Grid } from "./Grid/Grid"
 import "./App.css"
 
-function App() { 
+import { createContext, useEffect, useState } from "react"
+
+export const Contexto1 = createContext(null)
+
+
+function App() {
+
+  const [DadoVuelta, setDadoVuelta] = useState(null)
+
   return (
     <>
-    <div className="centrar">
-    <Grid />
-    </div>
-    
+      <Contexto1.Provider value={[DadoVuelta, setDadoVuelta]}>
+      <div className="centrar">
+        <Grid />
+      </div>
+      </Contexto1.Provider>
     </>
   )
 }
